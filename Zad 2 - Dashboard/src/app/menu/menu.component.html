@@ -1,0 +1,13 @@
+<nav *ngIf="isLoggedIn">
+    <ul>
+        <li><a routerLink="/dashboard">Strona Główna</a></li>
+        <li><a routerLink="/dashboard">O nas</a></li>  
+        <li><a routerLink="/dashboard">Oferta</a></li>  
+        <li><a routerLink="/dashboard">Facebook</a></li>  
+        <li><a routerLink="/dashboard">Instagram</a></li>
+        <li><form (ngSubmit)="wylogowanie()" #form="ngForm">
+            <button type="submit" [disabled]="form.invalid">Wyloguj</button>
+        </form>
+    </li>   
+    </ul>
+</nav>
