@@ -1,0 +1,26 @@
+nav {
+    float: left;
+    width: 200px; /* szerokość nawigacji */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px; /* odstęp między pozycjami */
+  }
+  
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #4caf50;
+  }
+  
